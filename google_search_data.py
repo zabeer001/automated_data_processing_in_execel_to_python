@@ -6,9 +6,11 @@ shortest_options = []
 df = pd.read_excel('google_search_data.xlsx')
 
 for index, row in df.iterrows():
-    longest_options.append(row['longest Option'])
+    print(row['longest option'])
+    longest_options.append(row['longest option'])
 
 for index, row in df.iterrows():
+    print(row['shortest option'])
     shortest_options.append(row['shortest option'])
 
 longest_str = max(longest_options,key=len)
